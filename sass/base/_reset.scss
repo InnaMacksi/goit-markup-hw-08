@@ -1,0 +1,30 @@
+
+p,
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+
+// mob vers width 100% тимчасово, інше обов'язково
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+
+}

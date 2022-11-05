@@ -1,0 +1,89 @@
+.hero {
+  height: 400px;
+  max-width: 100%;
+  padding: 118px 0;
+  margin-left: auto;
+  margin-right: auto;
+  @include desktop {
+    height: 600px;
+    max-width: 1600px;
+    padding: 200px 0;
+  }
+  // height: 600px;
+  // max-width: 1600px;
+  // margin-left: auto;
+  // margin-right: auto;
+  // padding: 200px 0;
+  background: var(--color-bg-hero);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__title {
+  margin-bottom: 30px;
+  max-width: 360px;
+  vertical-align: middle;
+  font-family: Roboto-900, sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-bg-header-and-logo-btn-addres);
+  @include mobile {
+    font-size: 26px;
+  }
+@include desktop {
+  max-width: 696px;
+  font-size: 44px;
+  line-height: 1.36;
+}
+  // margin-bottom: 30px;
+  // max-width: 696px;
+  // vertical-align: middle;
+  // font-family: Roboto-900, sans-serif;
+  // font-weight: 900;
+  // font-size: 44px;
+  // line-height: 1.36;
+  // text-align: center;
+  // letter-spacing: 0.06em;
+  // text-transform: uppercase;
+  // color: var(--color-bg-header-and-logo-btn-addres);
+}
+
+.hero__button {
+  min-width: 200;
+  @include desktop {
+    min-width: 216;
+  }
+
+  background: var(--color-logo-and-focus-btn-hero);
+  font-family: inherit;
+  font-family: Roboto-700, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  cursor: pointer;
+  // min-width: 216;
+  height: 50;
+  padding: 10px 32px;
+  border: 1px transparent;
+  color: var(--color-bg-header-and-logo-btn-addres);
+  position: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background: var(--color-button-hero-focus);
+  }
+}

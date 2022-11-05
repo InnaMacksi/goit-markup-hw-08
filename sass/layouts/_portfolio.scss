@@ -1,0 +1,105 @@
+.menu {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 34px;
+}
+
+.menu__btn {
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  background: var(--color-bg-our-tim-and-bg-button-our-projects);
+  font-family: inherit;
+  font-family: Roboto-500, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  color: var(--color-nav-and-title-and-btn-project);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:nth-child(1) {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  &:hover,
+  &:focus {
+    background: var(--color-logo-and-focus-btn-hero);
+    color: var(--color-bg-header-and-logo-btn-addres);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.projects__link {
+  color: inherit;
+  display: block;
+  box-shadow: none;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.projects__box {
+  position: relative;
+  overflow: hidden;
+}
+
+.projects__text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(33, 150, 243, 0.9);
+  padding: 63px 24px;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: auto;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--color-bg-header-and-logo-btn-addres);
+  .projects__link:hover & {
+    transform: translateY(0%);
+  }
+}
+
+.projects__title {
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--color-nav-and-title-and-btn-project);
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.projects__item {
+  width: calc((100% - 60px) / 3);
+}
+
+.projects__type {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
+
+.projects__wrap {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+
+.capital-letters {
+  text-transform: uppercase;
+}

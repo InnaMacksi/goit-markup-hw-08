@@ -1,0 +1,21 @@
+body {
+  font-family: Roboto-regular, sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  font-size: 14px;
+  color: var(--color-contacts-and-paragraph);
+}
+
+.title-section {
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-nav-and-title-and-btn-project);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
+}

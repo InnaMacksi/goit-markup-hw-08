@@ -1,0 +1,46 @@
+.section-pb-null {
+  padding-bottom: 0;
+}
+
+.preference {
+  width: 100%;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+.preference__item {
+  width: 100%;
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+    @include desktop {
+    width: calc((100% - 90px) / 4);
+  }
+}
+
+.preference__bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg-our-tim-and-bg-button-our-projects);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  height: 120px;
+}
+
+.preference__title {
+  margin-bottom: 10px;
+  font-size: inherit;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-nav-and-title-and-btn-project);
+}
+
+.preference__text {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
