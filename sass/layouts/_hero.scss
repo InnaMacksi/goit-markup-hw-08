@@ -4,22 +4,31 @@
   padding: 118px 0;
   margin-left: auto;
   margin-right: auto;
+  background: var(--color-bg-hero);
+  background-image: var(--bg-gradient), url(../images/hero-img-mob.jpg);
+  @include retina {
+    background-image: var(--bg-gradient), url(../images/hero-img-mob-2x.jpg);
+  }
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include tablet {
+    background-image: var(--bg-gradient), url(../images/hero-img-tab.jpg);
+    @include retina {
+      background-image: var(--bg-gradient), url(../images/hero-img-tab-2x.jpg);
+    }
+  }
+
   @include desktop {
     height: 600px;
     max-width: 1600px;
     padding: 200px 0;
+    background-image: var(--bg-gradient), url(../images/hero-img.jpg);
+    @include retina {
+      background-image: var(--bg-gradient), url(../images/hero-img-2x.jpg);
+    }
   }
-  // height: 600px;
-  // max-width: 1600px;
-  // margin-left: auto;
-  // margin-right: auto;
-  // padding: 200px 0;
-  background: var(--color-bg-hero);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero-img.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .hero__container {
@@ -43,22 +52,11 @@
   @include mobile {
     font-size: 26px;
   }
-@include desktop {
-  max-width: 696px;
-  font-size: 44px;
-  line-height: 1.36;
-}
-  // margin-bottom: 30px;
-  // max-width: 696px;
-  // vertical-align: middle;
-  // font-family: Roboto-900, sans-serif;
-  // font-weight: 900;
-  // font-size: 44px;
-  // line-height: 1.36;
-  // text-align: center;
-  // letter-spacing: 0.06em;
-  // text-transform: uppercase;
-  // color: var(--color-bg-header-and-logo-btn-addres);
+  @include desktop {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__button {
@@ -66,7 +64,6 @@
   @include desktop {
     min-width: 216;
   }
-
   background: var(--color-logo-and-focus-btn-hero);
   font-family: inherit;
   font-family: Roboto-700, sans-serif;
@@ -76,7 +73,6 @@
   letter-spacing: 0.06em;
   border-radius: 4px;
   cursor: pointer;
-  // min-width: 216;
   height: 50;
   padding: 10px 32px;
   border: 1px transparent;
