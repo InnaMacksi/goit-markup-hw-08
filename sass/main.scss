@@ -1,11 +1,12 @@
 @import './utils/fonts';
-@import './utils/mixin';
 @import './utils/vars';
 @import './base/reset';
+@import './utils/mixin';
 @import './components/container';
 @import './components/section';
 @import './base/common';
 @import './base/hidden';
+@import './layouts/logo';
 @import './layouts/header';
 @import './layouts/hero';
 @import './layouts/preference';

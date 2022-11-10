@@ -20,13 +20,20 @@
     />
     <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
-
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container container-header">
-        <a href="./index.html" lang="en" class="logo-colored link logo"
-          >Web<span class="logo__dark">Studio</span></a>
+        <div class="mobile-header">
+          <a href="./index.html" lang="en" class="logo-colored link logo"
+            >Web<span class="logo__dark">Studio</span></a
+          >
+          <button type="button" class="menu-open-btn" data-menu-open>
+            <svg class="menu-open-btn__icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-menu-open"></use>
+            </svg>
+          </button>
+        </div>
         <nav>
           <ul class="list navigation">
             <li class="navigation__item">
@@ -39,22 +46,99 @@
           </ul>
         </nav>
         <ul class="list contact">
-          <li>
-            <a href="mailto:info@devstudio.com" class="contact__link link">
-              <svg class="contact__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-mail"></use></svg>info@devstudio.com</a
-            >
+          <li class="contact__item">
+            <a href="mailto:info@devstudio.com" class="contact__link contact__mail link">
+              <svg class="contact__icon mail-icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>info@devstudio.com</a>
           </li>
-          <li>
-            <a href="tel:+380961111111" class="contact__link link">
-              <svg class="contact__icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a
-            >
+          <li class="contact__item">
+            <a href="tel:+380961111111" class="contact__link contact__tel link">
+              <svg class="contact__icon tel-icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+                </svg>+38 096 111 11 11</a>
           </li>
         </ul>
       </div>
-    </header> -->
 
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="mob-container">
+          <div class="mob-container__menu">
+            <button type="button" class="menu-close-btn" data-menu-close>
+              <svg class="menu-close-btn__icon" width="40" height="40">
+                <use href="./images/icons.svg#icon-close-mob-menu"></use>
+              </svg>
+            </button>
+            <ul class="list menu-mob-list">
+              <li class="menu-mob-list__item">
+                <a href="" class="menu-mob-list__link current link">Студія</a>
+              </li>
+              <li class="menu-mob-list__item">
+                <a href="./portfolio.html" class="menu-mob-list__link link">Портфоліо</a>
+              </li>
+              <li class="menu-mob-list__item">
+                <a href="" class="menu-mob-list__link link">Контакти</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-container__contakt">
+            <ul class="list menu-contact">
+              <li>
+                <a href="tel:+380961111111" class="menu-contact__link-tel link"
+                  >+38 096 111 11 11</a>
+              </li>
+
+              <li>
+                <a href="mailto:info@devstudio.com" class="menu-contact__link-mail link"
+                  >info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="menu-soc list">
+              <li class="menu-soc__item">
+                <a
+                  class="menu-soc__link link"
+                  lang="en"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Instagram
+                </a>
+              </li>
+              <li class="menu-soc__item">
+                <a
+                  class="menu-soc__link link"
+                  lang="en"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Twitter
+                </a>
+              </li>
+              <li class="menu-soc__item">
+                <a
+                  class="menu-soc__link link"
+                  lang="en"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Facebook
+                </a>
+              </li>
+              <li class="menu-soc__item">
+                <a
+                  class="menu-soc__link link"
+                  lang="en"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >LinkedIn
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
     <main>
       <section class="hero">
         <div class="container hero__container">
@@ -120,8 +204,10 @@
             <li>
               <div class="our-work__label">
                 <img
-                srcset="./images/our-work/our-work-jpg-1.jpg 1x,
-                        ./images/our-work/our-work-jpg-1-2x.jpg 2x"
+                  srcset="
+                    ./images/our-work/our-work-jpg-1.jpg    1x,
+                    ./images/our-work/our-work-jpg-1-2x.jpg 2x
+                  "
                   class="our-work__img"
                   src="./images/our-work/our-work-jpg-1.jpg"
                   alt="Людина працює на комп'ютері"
@@ -134,8 +220,10 @@
             <li>
               <div class="our-work__label">
                 <img
-                srcset="./images/our-work/our-work-jpg-2.jpg 1x,
-                        ./images/our-work/our-work-jpg-2-2x.jpg 2x"
+                  srcset="
+                    ./images/our-work/our-work-jpg-2.jpg    1x,
+                    ./images/our-work/our-work-jpg-2-2x.jpg 2x
+                  "
                   class="our-work__img"
                   src="./images/our-work/our-work-jpg-2.jpg"
                   alt="Людина працює на смартфоні та ноутбуці"
@@ -148,8 +236,10 @@
             <li>
               <div class="our-work__label">
                 <img
-                srcset="./images/our-work/our-work-jpg-3.jpg 1x,
-                        ./images/our-work/our-work-jpg-3-2x.jpg 2x"
+                  srcset="
+                    ./images/our-work/our-work-jpg-3.jpg    1x,
+                    ./images/our-work/our-work-jpg-3-2x.jpg 2x
+                  "
                   class="our-work__img"
                   src="./images/our-work/our-work-jpg-3.jpg"
                   alt="Людина працює на графічному планшеті"
@@ -167,12 +257,34 @@
           <h2 class="title-section">Наша команда</h2>
           <ul class="list our-tim">
             <li class="our-tim__item">
-              <img
-                src="./images/our-team/team-jpg-1.jpg"
-                alt="Усміхнений хлопець в окулярах"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-team/team-jpg-1.jpg 1x,
+                    ./images/our-team/team-jpg-1-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/team-tab-1-1x.jpg 1x,
+                    ./images/our-team/team-tab-1-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/team-mob-1-1x.jpg 1x,
+                    ./images/our-team/team-mob-1-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/our-team/team-jpg-1.jpg"
+                  alt="Усміхнений хлопець в окулярах"
+                  width="450"
+                />
+              </picture>
               <div class="our-tim__text">
                 <h3 class="our-tim__workers">Ігор Дем'яненко</h3>
                 <p lang="en" class="our-tim__positions">Product Designer</p>
@@ -209,12 +321,34 @@
               </div>
             </li>
             <li class="our-tim__item">
-              <img
-                src="./images/our-team/team-jpg-2.jpg"
-                alt="Усміхнена дівчина в окулярах"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-team/team-jpg-2.jpg 1x,
+                    ./images/our-team/team-jpg-2-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/team-tab-2-1x.jpg 1x,
+                    ./images/our-team/team-tab-2-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/team-mob-2-1x.jpg 1x,
+                    ./images/our-team/team-mob-2-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/our-team/team-jpg-2.jpg"
+                  alt="Усміхнена дівчина в окулярах"
+                  width="450"
+                />
+              </picture>
               <div class="our-tim__text">
                 <h3 class="our-tim__workers">Ольга Рєпіна</h3>
                 <p lang="en" class="our-tim__positions">Frontend Developer</p>
@@ -251,12 +385,30 @@
               </div>
             </li>
             <li class="our-tim__item">
-              <img
-                src="./images/our-team/team-jpg-3.jpg"
-                alt="Усміхнений хлопець"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-team/team-jpg-3.jpg 1x,
+                    ./images/our-team/team-jpg-3-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/team-tab-3-1x.jpg 1x,
+                    ./images/our-team/team-tab-3-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/team-mob-3-1x.jpg 1x,
+                    ./images/our-team/team-mob-3-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./images/our-team/team-jpg-3.jpg" alt="Усміхнений хлопець" width="450" />
+              </picture>
               <div class="our-tim__text">
                 <h3 class="our-tim__workers">Микола Тарасов</h3>
                 <p lang="en" class="our-tim__positions">Marketing</p>
@@ -293,12 +445,34 @@
               </div>
             </li>
             <li class="our-tim__item">
-              <img
-                src="./images/our-team/team-jpg-4.jpg"
-                alt="Усміхнений хлопець в окулярах"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/our-team/team-jpg-4.jpg 1x,
+                    ./images/our-team/team-jpg-4-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/team-tab-4-1x.jpg 1x,
+                    ./images/our-team/team-tab-4-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/our-team/team-mob-4-1x.jpg 1x,
+                    ./images/our-team/team-mob-4-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/our-team/team-jpg-4.jpg"
+                  alt="Усміхнений хлопець в окулярах"
+                  width="450"
+                />
+              </picture>
               <div class="our-tim__text">
                 <h3 class="our-tim__workers">Михайло Єрмаков</h3>
                 <p lang="en" class="our-tim__positions">UI Designer</p>
@@ -387,15 +561,16 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container container-footer">
+        <div class="container__addres-soc">
           <div class="container-addres">
             <a href="./index.html" lang="en" class="logo-colored logo-footer link"
               >Web<span class="logo__part-light">Studio</span></a
             >
-            <address class="addres">
-              <ul>
-                <li class="addres__list">
+            <address>
+              <ul class="addres">
+                <li class="addres__item">
                   <a
                     href="https://goo.gl/maps/gcZeXsUXaWPPvR7o7"
                     target="_blank"
@@ -404,14 +579,12 @@
                     >м. Київ, пр-т Лесі Українки, 26</a
                   >
                 </li>
-                <li class="addres__list">
-                  <a
-                    href="mailto:info@devstudio.com"
-                    class="addres__contact addres__footer link"
+                <li class="addres__item">
+                  <a href="mailto:info@devstudio.com" class="addres__contact addres__footer link"
                     >info@devstudio.com</a
                   >
                 </li>
-                <li class="addres__list">
+                <li class="addres__item">
                   <a href="tel:+380961111111" class="addres__contact addres__footer link"
                     >+38 096 111 11 11</a
                   >
@@ -452,28 +625,29 @@
               </li>
             </ul>
           </div>
-          <div class="subscribe">
-            <p class="subscribe__title">Підпишіться на розсилку</p>
-            <form>
-              <div class="subscribe__container">
-                <label for="email-join"></label>
-                <input
-                  type="email"
-                  class="subscribe__input"
-                  name="email-join"
-                  placeholder="E-mail"
-                  id="email-join"
-                />
-                <button type="submit" class="subscribe__btn">
-                  Підписатися<svg class="subscribe__icon-send" width="24" height="24">
-                    <use href="./images/icons.svg#icon-send"></use>
-                  </svg>
-                </button>
-              </div>
-            </form>
-          </div>
+        </div>
+        <div class="subscribe">
+          <p class="subscribe__title">Підпишіться на розсилку</p>
+          <form>
+            <div class="subscribe__container">
+              <label for="email-join"></label>
+              <input
+                type="email"
+                class="subscribe__input"
+                name="email-join"
+                placeholder="E-mail"
+                id="email-join"
+              />
+              <button type="submit" class="subscribe__btn">
+                Підписатися<svg class="subscribe__icon-send" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
-    </footer> -->
+    </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__close-btn" data-modal-close>
@@ -552,5 +726,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

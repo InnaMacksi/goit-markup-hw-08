@@ -1,0 +1,34 @@
+.logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @include tablet {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  @include desktop {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+  }
+}
+
+.logo-colored {
+  font-family: Raleway-700, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--color-logo-and-focus-btn-hero);
+  @include desktop {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
+.logo__dark {
+  color: var(--color-logo-light-bg);
+}
+
+.logo__part-light {
+  color: var(--color-bg-header-and-logo-btn-addres);
+}

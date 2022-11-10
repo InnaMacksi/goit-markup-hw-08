@@ -1,11 +1,7 @@
 .our-tim {
-  width: 100%;
-
-  @mixin tablet {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .our-tim__text {
@@ -18,11 +14,11 @@
 
 .our-tim__item {
   width: 100%;
-  @mixin tablet {
+  @include tablet {
     width: calc((100% - 30px) / 2);
   }
 
-    @mixin desktop {
+  @include desktop {
     width: calc((100% - 90px) / 4);
   }
   border: 1px solid #eeeeee;

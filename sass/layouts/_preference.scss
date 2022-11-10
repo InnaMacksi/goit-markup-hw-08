@@ -3,12 +3,9 @@
 }
 
 .preference {
-  width: 100%;
-  @include tablet {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .preference__item {
@@ -16,7 +13,7 @@
   @include tablet {
     width: calc((100% - 30px) / 2);
   }
-    @include desktop {
+  @include desktop {
     width: calc((100% - 90px) / 4);
   }
 }

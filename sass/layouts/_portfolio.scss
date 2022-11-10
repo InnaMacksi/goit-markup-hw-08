@@ -1,8 +1,18 @@
 .menu {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin-bottom: 34px;
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 8px;
+    row-gap: 15px;
+    margin-bottom: 40px;
+  }
+  @include tablet {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 34px;
+  }
 }
 
 .menu__btn {
@@ -82,10 +92,22 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
+}
+
+.projects:last-child {
+  justify-content: flex-start;
 }
 
 .projects__item {
-  width: calc((100% - 60px) / 3);
+  width: 100%;
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @include desktop {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .projects__type {
