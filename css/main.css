@@ -207,6 +207,7 @@ body {
 .mob-menu {
   position: fixed;
   top: 0;
+  z-index: 1;
   background: var(--color-bg-header-and-logo-btn-addres);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   width: 100vw;
@@ -258,15 +259,21 @@ body {
 
 .menu-contact__link-tel {
   font-weight: 500;
-  font-size: 26px;
-  line-height: 1.18;
+  color: var(--color-contacts-and-paragraph);
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
-  color: var(--color-logo-and-focus-btn-hero);
   margin-bottom: 32px;
   display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-contact__link-tel:hover, .menu-contact__link-tel:focus {
+  font-size: 26px;
+  line-height: 1.18;
+  color: var(--color-logo-and-focus-btn-hero);
 }
 @media screen and (min-width: 480px) {
-  .menu-contact__link-tel {
+  .menu-contact__link-tel:hover, .menu-contact__link-tel:focus {
     font-size: 34px;
   }
 }
@@ -279,6 +286,17 @@ body {
   color: var(--color-contacts-and-paragraph);
   margin-bottom: 64px;
   display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-contact__link-mail:hover, .menu-contact__link-mail:focus {
+  font-size: 26px;
+  line-height: 1.18;
+  color: var(--color-logo-and-focus-btn-hero);
+}
+@media screen and (min-width: 480px) {
+  .menu-contact__link-mail:hover, .menu-contact__link-mail:focus {
+    font-size: 34px;
+  }
 }
 
 .menu-soc {
@@ -338,7 +356,6 @@ body {
   .contact {
     flex-direction: row;
     gap: 30px;
-    margin-left: auto;
   }
 }
 

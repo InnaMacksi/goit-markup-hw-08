@@ -11,15 +11,12 @@
 
 .modal {
   width: calc(100vw - 30px);
-    max-height: 609px;
-    @include mobile {
-        width: 450px;
-    }
-
-
-
+  max-height: 609px;
+  @include mobile {
+    width: 450px;
+  }
   @include desktop {
-  width: 528px;
+    width: 528px;
     min-height: 581px;
   }
   padding: 40px;
@@ -173,11 +170,11 @@
 
 .check__text {
   font-size: 12px;
-    line-height: 1.17;
-@include desktop {
+  line-height: 1.17;
+  @include desktop {
     font-size: 14px;
-  line-height: 1.71;
-}
+    line-height: 1.71;
+  }
   margin-left: 14px;
   letter-spacing: 0.03em;
   color: var(--color-contacts-and-paragraph);
