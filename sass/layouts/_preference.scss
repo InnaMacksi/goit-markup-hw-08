@@ -1,5 +1,7 @@
 .section-pb-null {
-  padding-bottom: 0;
+  @media screen and (max-width: 767px){
+      padding-bottom: 60px;
+  }
 }
 
 .preference {
@@ -33,8 +35,12 @@
   font-size: inherit;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--color-nav-and-title-and-btn-project);
+  @include tablet {
+    text-align: start;
+  }
 }
 
 .preference__text {

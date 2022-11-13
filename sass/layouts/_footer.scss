@@ -13,7 +13,10 @@
   gap: 8px;
   margin-top: 20px;
   margin-bottom: 60px;
-}
+  @include desktop {
+    align-items: flex-start;
+  }
+  }
 
 .addres__footer {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -49,6 +52,7 @@
   align-items: center;
   @include desktop {
     flex-direction: row;
+    align-items: flex-start;
   }
 }
 
@@ -57,7 +61,8 @@
   flex-direction: column;
   align-items: center;
   @include desktop {
-    margin-right: 70px;
+    // margin-right: 70px;
+    align-items: flex-start;
   }
 }
 
@@ -65,6 +70,10 @@
   @include tablet {
     display: flex;
     gap: 165px;
+  }
+  @include desktop {
+    gap: 70px;
+    
   }
 }
 
@@ -90,6 +99,12 @@
 
 .soc-join {
   margin-bottom: 60px;
+    @include desktop {
+      padding-top: 12px;
+      display: flex;
+      flex-direction: column;
+        align-items: flex-start;
+      }
 }
 
 .soc-join__item {
@@ -130,6 +145,9 @@
   color: var(--color-bg-header-and-logo-btn-addres);
 
   text-align: center;
+  @include desktop {
+    text-align: start;
+  }
 }
 
 .subscribe__input {
@@ -137,9 +155,9 @@
   height: 50px;
   margin-bottom: 20px;
 
-  @include mobile {
-    width: 450px;
-  }
+  // @include mobile {
+  //   width: 450px;
+  // }
   @include desktop {
     margin-right: 12px;
     padding-left: 16px;
@@ -166,15 +184,24 @@
 }
 
 .subscribe {
+  width: 100%;
   @include desktop {
-    margin-left: auto;
+    padding-top: 12px;
+    margin-left: 93px;
   }
 }
 
 .subscribe__container {
+
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include desktop {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-items: center;
+  }
+
 }
 
 .subscribe__btn {
